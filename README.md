@@ -1,5 +1,7 @@
 # Documentação da API
 
+https://documenter.getpostman.com/view/38160250/2sBXitDTFu
+
 # 🌐 Api Orkut
 
 API RESTful desenvolvida com **Node.js**, **Express** e **PostgreSQL**, criada com o objetivo de demonstrar na prática a construção de um backend completo, do zero até um padrão próximo do mercado.
