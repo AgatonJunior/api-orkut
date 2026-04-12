@@ -123,11 +123,11 @@ app.post("/posts", auth, validarPost, async (req, res) => {
     const { titulo, conteudo } = req.body;
     const resultado = await pool.query(
       `
-      INSERT INTO post (titulo, conteudo, usuario_id)
-      VALUES ($1, $2, $3)
+      INSERT INTO post (titulo, conteudo)
+      VALUES ($1, $2)
       RETURNING *
       `,
-      [titulo, conteudo, req.usuario.id],
+      [titulo, conteudo],
     );
     res.status(201).json({
       mensagem: "Post criado com sucesso",
